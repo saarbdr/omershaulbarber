@@ -12,6 +12,7 @@
       background: radial-gradient(circle at top, #222 0, #000 55%, #111 100%);
       color: #f9f9f9;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
@@ -159,6 +160,25 @@
     .popup button:hover {
       background: #ffe08a;
     }
+
+    /* קישורים לתחתית */
+    .footer-links {
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.8;
+      margin-top: 20px;
+    }
+
+    .footer-links a {
+      color: #f5d37a;
+      text-decoration: none;
+      margin: 0 6px;
+      transition: 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -190,6 +210,11 @@
       <div class="review">"שירות מעולה ואווירה משפחתית. כל פעם יוצא מרוצה." – עידו ב.</div>
       <div class="review">"פעם ראשונה אצל עומר – אין דברים כאלה. מומלץ בחום!" – ליאור ג.</div>
     </div>
+
+    <div class="footer-links">
+      <a href="terms.html">תקנון האתר</a> |
+      <a href="https://userway.org/he/" target="_blank">נגישות</a>
+    </div>
   </div>
 
   <!-- חלון קופץ 'הוסף למסך הבית' -->
@@ -204,7 +229,6 @@
     const popup = document.getElementById('installPopup');
     const closeBtn = document.getElementById('closePopup');
 
-    // מציג את הפופאפ 3 שניות אחרי טעינת הדף
     window.addEventListener('load', () => {
       setTimeout(() => {
         popup.style.display = 'block';
@@ -215,9 +239,5 @@
       popup.style.display = 'none';
     });
   </script>
-  <div style="text-align:center; font-size:0.8rem; margin-top:20px; opacity:0.7;">
-  <a href="terms.html" style="color:#f5d37a; text-decoration:none;">תקנון האתר</a> |
-  <a href="https://userway.org/he/" target="_blank" style="color:#f5d37a; text-decoration:none;">נגישות</a>
-</div>
 </body>
 </html>
