@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>עומר שאול - מספרת גברים</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #222 0, #000 55%, #111 100%);
+      color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: rgba(15, 15, 15, 0.96);
+      border-radius: 24px;
+      padding: 24px 22px;
+      max-width: 420px;
+      width: 92%;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      font-size: 1rem;
+      color: #f5d37a;
+      margin-bottom: 10px;
+    }
+    .divider {
+      height: 1px;
+      background: linear-gradient(to left, transparent, #f5d37a, transparent);
+      margin: 10px 0 14px;
+    }
+    .section-title {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-bottom: 6px;
+    }
+    .info-line {
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+      opacity: 0.95;
+    }
+    .info-label {
+      font-weight: 600;
+    }
+    .buttons {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      border: 1px solid rgba(245, 211, 122, 0.4);
+      background: linear-gradient(135deg, #2a2a2a, #151515);
+      color: #f9f9f9;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+      background: linear-gradient(135deg, #3a3a3a, #202020);
+    }
+    .btn-whatsapp { border-color: rgba(37, 211, 102, 0.7); }
+    .btn-instagram { border-color: rgba(193, 53, 132, 0.7); }
+    .btn-calendar { border-color: rgba(245, 211, 122, 0.8); }
+    .btn-location { border-color: rgba(135, 206, 235, 0.8); }
+    .qr-wrap {
+      margin-top: 20px;
+      text-align: center;
+      opacity: 0.9;
+    }
+    .qr-wrap img {
+      width: 110px;
+      height: 110px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: #fff;
+      padding: 6px;
+    }
+    .qr-caption {
+      font-size: 0.8rem;
+      margin-top: 4px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">עומר שאול</div>
+    <div class="subtitle">מספרת גברים</div>
+    <div class="divider"></div>
+
+    <div class="section-title">פרטי קשר</div>
+    <div class="info-line">
+      <span class="info-label">טלפון:</span>
+      <a href="tel:05XXXXXXXX" style="color:#f5d37a; text-decoration:none;">05X-XXXXXXX</a>
+    </div>
+    <div class="info-line">
+      <span class="info-label">כתובת:</span>
+      רחוב / עיר (לעדכן)
+    </div>
+
+    <div class="buttons">
+      <a class="btn btn-whatsapp" href="https://wa.me/9725XXXXXXXX" target="_blank" rel="noopener">וואטסאפ</a>
+      <a class="btn btn-instagram" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">אינסטגרם</a>
+      <a class="btn btn-calendar" href="https://calmark.io/p/2rYEo" target="_blank" rel="noopener">קביעת תור</a>
+      <a class="btn btn-location" href="https://maps.google.com" target="_blank" rel="noopener">ניווט</a>
+    </div>
+
+    <div class="qr-wrap">
+      <img src="omer_shaul_barbershop_qr.png" alt="QR לקביעת תור לעומר שאול">
+      <div class="qr-caption">סרקו לקביעת תור אונליין</div>
+    </div>
+  </div>
+</body>
+</html>
