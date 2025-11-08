@@ -2,133 +2,111 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>עומר שאול - מספרת גברים</title>
+  <title>תקנון האתר - עומר שאול מספרת גברים</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: radial-gradient(circle at top, #222 0, #000 55%, #111 100%);
       color: #f9f9f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      line-height: 1.7;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+      direction: rtl;
     }
-    .card {
-      background: rgba(15, 15, 15, 0.96);
-      border-radius: 24px;
-      padding: 24px 22px;
-      max-width: 420px;
-      width: 92%;
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    .subtitle {
-      font-size: 1rem;
+
+    h1 {
+      text-align: center;
       color: #f5d37a;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
-    .divider {
-      height: 1px;
-      background: linear-gradient(to left, transparent, #f5d37a, transparent);
-      margin: 10px 0 14px;
+
+    h2 {
+      color: #f5d37a;
+      font-size: 1.1rem;
+      margin-top: 24px;
     }
-    .section-title {
-      font-size: 0.9rem;
-      opacity: 0.8;
-      margin-bottom: 6px;
-    }
-    .info-line {
-      font-size: 0.95rem;
-      margin-bottom: 4px;
-      opacity: 0.95;
-    }
-    .info-label {
-      font-weight: 600;
-    }
-    .buttons {
-      margin-top: 18px;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 12px;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      text-decoration: none;
-      border: 1px solid rgba(245, 211, 122, 0.4);
-      background: linear-gradient(135deg, #2a2a2a, #151515);
-      color: #f9f9f9;
-      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
-      text-align: center;
-      white-space: nowrap;
-    }
-    .btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
-      background: linear-gradient(135deg, #3a3a3a, #202020);
-    }
-    .btn-whatsapp { border-color: rgba(37, 211, 102, 0.7); }
-    .btn-instagram { border-color: rgba(193, 53, 132, 0.7); }
-    .btn-calendar { border-color: rgba(245, 211, 122, 0.8); }
-    .btn-location { border-color: rgba(135, 206, 235, 0.8); }
-    .qr-wrap {
-      margin-top: 20px;
-      text-align: center;
+
+    p {
+      margin-bottom: 12px;
       opacity: 0.9;
     }
-    .qr-wrap img {
-      width: 110px;
-      height: 110px;
-      border-radius: 16px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      background: #fff;
-      padding: 6px;
+
+    a {
+      color: #f5d37a;
+      text-decoration: none;
     }
-    .qr-caption {
-      font-size: 0.8rem;
-      margin-top: 4px;
-      opacity: 0.8;
+
+    a:hover {
+      color: #fff;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 30px;
+      color: #f5d37a;
+      text-decoration: none;
+      border: 1px solid #f5d37a;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: 0.2s;
+    }
+
+    .back:hover {
+      background: #f5d37a;
+      color: #000;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="title">עומר שאול</div>
-    <div class="subtitle">מספרת גברים</div>
-    <div class="divider"></div>
+  <h1>תקנון האתר</h1>
 
-    <div class="section-title">פרטי קשר</div>
-    <div class="info-line">
-      <span class="info-label">טלפון:</span>
-      <a href="tel:05XXXXXXXX" style="color:#f5d37a; text-decoration:none;">05X-XXXXXXX</a>
-    </div>
-    <div class="info-line">
-      <span class="info-label">כתובת:</span>
-      רחוב / עיר (לעדכן)
-    </div>
+  <p>ברוך הבא לאתר <b>עומר שאול - מספרת גברים</b>. השימוש באתר זה מהווה הסכמה לתנאי התקנון המפורטים להלן.</p>
 
-    <div class="buttons">
-      <a class="btn btn-whatsapp" href="https://wa.me/9725XXXXXXXX" target="_blank" rel="noopener">וואטסאפ</a>
-      <a class="btn btn-instagram" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">אינסטגרם</a>
-      <a class="btn btn-calendar" href="https://calmark.io/p/2rYEo" target="_blank" rel="noopener">קביעת תור</a>
-      <a class="btn btn-location" href="https://maps.google.com" target="_blank" rel="noopener">ניווט</a>
-    </div>
+  <h2>1. כללי</h2>
+  <p>האתר נועד לספק מידע על שירותי המספרה, שעות פעילות, פרטי התקשרות, ולקשר לשירותי קביעת תורים אונליין.</p>
 
-    <div class="qr-wrap">
-      <img src="omer_shaul_barbershop_qr.png" alt="QR לקביעת תור לעומר שאול">
-      <div class="qr-caption">סרקו לקביעת תור אונליין</div>
-    </div>
+  <h2>2. קביעת תורים</h2>
+  <p>קביעת תורים נעשית באמצעות מערכת חיצונית (<a href="https://calmark.io" target="_blank">Calmark</a>) או באמצעות יצירת קשר בטלפון/וואטסאפ. ייתכנו תקלות או שיבושים בשירותי המערכות החיצוניות, ועל כך לא תחול אחריות על בעל האתר.</p>
+
+  <h2>3. מדיניות ביטולים</h2>
+  <p>ביטול או שינוי תור יתבצעו בהתאם למדיניות הנהוגה במספרה. מומלץ לבצע ביטולים עד 12 שעות לפני מועד התור שנקבע, באמצעות טלפון או וואטסאפ.</p>
+
+  <h2>4. הגבלת אחריות</h2>
+  <p>המידע באתר ניתן כפי שהוא ("As Is") ואינו מהווה התחייבות, מצג או אחריות מכל סוג שהוא. בעל האתר ו/או מפעילו ו/או מי מטעמו, לרבות מי שבנה או תחזק את האתר, לא יישאו באחריות לכל נזק ישיר, עקיף, תוצאתי או מיוחד שייגרם כתוצאה משימוש באתר, מהסתמכות על המידע בו או מאי־יכולת להשתמש בו, וזאת ככל שהדבר מותר לפי הדין.</p>
+  <p>השימוש באתר הוא על אחריותו הבלעדית של המשתמש. בכל מקרה של סתירה בין המידע באתר לבין מידע שיימסר ישירות במספרה – יגבר המידע שיימסר במספרה.</p>
+
+  <h2>5. פרטיות</h2>
+  <p>האתר עצמו אינו מבצע איסוף יזום של נתונים אישיים. בעת מעבר לשירותים חיצוניים (כגון WhatsApp, Calmark או שירותי מפות), יחולו תנאי השימוש ומדיניות הפרטיות של אותם שירותים.</p>
+
+  <h2>6. נגישות</h2>
+  <p>בעל האתר שואף לאפשר חוויית גלישה נוחה ככל האפשר לכלל המשתמשים, לרבות אנשים עם מוגבלות, ופועל לשיפור מתמיד של הנגישות בהתאם ליכולותיו ולמשאבים שעומדים לרשותו.</p>
+  <p>על אף המאמצים, ייתכן שחלק מהתכנים או השירותים באתר עדיין אינם נגישים באופן מלא. משתמש שנתקל בבעיה בנגישות מוזמן לפנות ישירות לבעל האתר לצורך טיפול בפנייה, ואנו נעשה מאמץ סביר לתת מענה בהקדם.</p>
+  <p>שום דבר בסעיף זה אינו מהווה ויתור על הוראות הדין החלות בעניין נגישות, אלא תיאור מצב בפועל בלבד.</p>
+
+  <h2>7. שינויים באתר ובתקנון</h2>
+  <p>בעל האתר רשאי לעדכן מעת לעת את תכני האתר, את השירותים הניתנים בו וכן את תנאי התקנון, ללא הודעה מוקדמת. הנוסח המחייב הוא זה שיתפרסם באתר במועד השימוש.</p>
+
+  <h2>8. יצירת קשר</h2>
+  <p>לכל שאלה או בירור, ניתן לפנות ל:<br>
+     📞 <a href="tel:0524580041">052-4580041</a><br>
+     📍 הרצל 42, גן יבנה</p>
+
+  <p style="margin-top:30px; font-size:0.85rem; opacity:0.8;">
+    האמור בתקנון זה הוא מידע כללי בלבד ואינו מהווה ייעוץ משפטי. לשאלות או התאמה לצרכים משפטיים ספציפיים מומלץ לפנות לעורך דין.
+  </p>
+
+  <div style="text-align:center;">
+    <a href="index.html" class="back">⬅ חזרה לעמוד הראשי</a>
   </div>
 </body>
 </html>
