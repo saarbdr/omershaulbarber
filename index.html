@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>עומר שאול - מספרת גברים</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="manifest" href="manifest.json">
 
   <style>
     body {
@@ -130,6 +129,7 @@
       line-height: 1.3;
     }
 
+    /* פופאפ הוסף למסך הבית */
     .popup {
       position: fixed;
       bottom: 20px;
@@ -140,9 +140,10 @@
       padding: 14px 16px;
       border-radius: 14px;
       box-shadow: 0 0 18px rgba(0,0,0,0.5);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       display: none;
       z-index: 1000;
+      max-width: 260px;
     }
 
     .popup button {
@@ -150,7 +151,7 @@
       border: none;
       border-radius: 8px;
       padding: 6px 10px;
-      margin-right: 8px;
+      margin-top: 8px;
       font-weight: 600;
       cursor: pointer;
     }
@@ -185,7 +186,7 @@
 
     <div class="reviews">
       <h3>ביקורות לקוחות ⭐</h3>
-      <div class="review">"עומר מדויק בטירוף, תספורת ברמה של חו"ל. לא מחליף אותו!" – רועי מ.</div>
+      <div class="review">"עומר מדויק בטירוף, תספורת ברמה של חו\"ל. לא מחליף אותו!" – רועי מ.</div>
       <div class="review">"שירות מעולה ואווירה משפחתית. כל פעם יוצא מרוצה." – עידו ב.</div>
       <div class="review">"פעם ראשונה אצל עומר – אין דברים כאלה. מומלץ בחום!" – ליאור ג.</div>
     </div>
@@ -193,29 +194,26 @@
 
   <!-- חלון קופץ 'הוסף למסך הבית' -->
   <div class="popup" id="installPopup">
-    רוצה גישה מהירה? <b>הוסף את המספרה של עומר למסך הבית!</b>
-    <button id="installBtn">הוסף</button>
-    <button id="closePopup">×</button>
+    💡 טיפ: כדי להגיע למספרה של עומר בלחיצה אחת, אפשר להוסיף את הדף הזה למסך הבית.<br><br>
+    <b>באנדרואיד:</b> תפריט ⋮ של הדפדפן → "הוסף למסך הבית"<br>
+    <b>באייפון:</b> כפתור השיתוף ⬆ → "הוספה למסך הבית"<br>
+    <button id="closePopup">הבנתי</button>
   </div>
 
   <script>
-    let deferredPrompt;
     const popup = document.getElementById('installPopup');
-    const btn = document.getElementById('installBtn');
     const closeBtn = document.getElementById('closePopup');
 
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault();
-      deferredPrompt = e;
-      setTimeout(() => popup.style.display = 'block', 3000);
+    // מציג את הפופאפ 3 שניות אחרי טעינת הדף
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        popup.style.display = 'block';
+      }, 3000);
     });
 
-    btn.addEventListener('click', () => {
+    closeBtn.addEventListener('click', () => {
       popup.style.display = 'none';
-      deferredPrompt.prompt();
     });
-
-    closeBtn.addEventListener('click', () => popup.style.display = 'none');
   </script>
 </body>
 </html>
